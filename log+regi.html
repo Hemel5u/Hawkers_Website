@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/log+regi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>LogIn & Registration</title>
+</head>
+<body>
+  <div class="hero">
+    <div class="box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button class="switch"onclick="login()" >LogIn</button>
+        <button class="switch"onclick="register()" >Register</button>
+      </div>
+      <div class="icons">
+        <img src="Picture/facebook.png" alt="">
+        <img src="Picture/twitter.png" alt="">
+        <img src="Picture/google.png" alt="">
+      </div>
+<form action=""id="login"class="input-group">
+  <input type="text"class="input"placeholder="User Id"required><br><br>
+  <input type="text"class="input"placeholder="Enter Password"required><br><br>
+  <input type="checkbox"class="check-box"><span>Remember Password</span><br><br>
+  <button class="submit-btn">LogIn</button><br><br>
+  <p ><a  href="Reset.html">Forget Password</a></p>
+</form>
+<form action=""id="register"class="input-group">
+  <input type="text"class="input"placeholder="Name"required><br>
+  <input type="email"class="input"placeholder="Email Id"required><br>
+  <input type="number"class="input"placeholder="PhoneNumber"required><br>
+  <input type="text"class="input"placeholder="Stall Address"required><br>
+  <input type="password"class="input"placeholder="Enter Password"required><br>
+  <input type="password"class="input"placeholder="Conferm Password"required><br><br>
+  <button class="submit-btn">Register</button>
+</form>
+
+    </div>
+    
+  </div>  
+  <script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("register");
+    var z=document.getElementById("btn");
+    function register(){
+      x.style.left="-350px";
+      y.style.left="25px";
+      z.style.left="110px";
+    }
+    function login(){
+      x.style.left="12px";
+      y.style.left="450px";
+      z.style.left="0px";
+    }
+  </script>
+ 
+</body>
+</html>
